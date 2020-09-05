@@ -11,23 +11,19 @@ cd telegramer
 
 ## Usage
 
-**Rename all audio files in current directory**
-
+Rename all audio files in current directory
 `$ python3 telegramer --rename`
 
 
-**Rename all audio files in a specific directory**
-
+Rename all audio files in a specific directory
 `$ python3 telegramer --rename -d /path/to/directory/audiofiles`
 
 
-**Group audio based on artist name**
-
+Group audio based on artist name
 `$ python3 telegramer --groupby artist -d /path/to/directory/audiofiles`
 
 
-**Use `help` to get more options.**
-
+Use `help` to get more options.
 `$ python3 telegramer --help`
 
 
