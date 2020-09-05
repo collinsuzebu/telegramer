@@ -12,17 +12,18 @@ cd telegramer
 ## Usage
 
 Rename all audio files in current directory
-`$ python3 telegramer --rename`
+```$ python3 telegramer --rename```
 
 Rename all audio files in a specific directory
-`$ python3 telegramer --rename -d /path/to/directory/audiofiles`
+```$ python3 telegramer --rename -d /path/to/directory/audiofiles```
 
 Group audio based on artist name
-`$ python3 telegramer --groupby artist -d /path/to/directory/audiofiles`
+```$ python3 telegramer --groupby artist -d /path/to/directory/audiofiles```
 
 
 Use `help` to get more options.
-`$ python3 telegramer --help`
+```$ python3 telegramer --help```
+
 
 
 ## Development
@@ -32,5 +33,4 @@ Use `help` to get more options.
 Add `conftest.py` in the root directory. `conftest.py` is not tracked on git.
 
 You can run test using `pytest` with the simple command:
-`$ pytest telegramer`
-
+```$ pytest telegramer```
