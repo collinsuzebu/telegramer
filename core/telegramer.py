@@ -6,8 +6,6 @@ from phrydy import MediaFile
 from phrydy.mediafile import FileTypeError, UnreadableFileError
 from PIL import Image
 
-image_path = r'C:\Users\CollinsUz\Desktop\apple-logo.png'
-
 
 def delete_media_host(string):
 	if not string:
