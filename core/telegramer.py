@@ -11,13 +11,13 @@ def delete_media_host(string):
         return None
     substitute = re.compile(
         r"""
-							(\s*?(?:\[|\(|\{|)?@\w*\s*\w+(?:\)|\]|\})?	#@mention
-							|\s?\|?\|?\-?\s*\#?
-							\[?(?:\w{3}\.)?\w+\.\w{2,3}(?:\.\w{2})?\b\]? 	#website
-							|\[?\s*\bBB\w{0,3}\s*\-?(CHANNEL)?\s*?\-?\s*\w+\s*\]?	#bbm
-							|\s+\|s*
-							|\||\\|\/|\?|\<|\>|\:|\*|)""",
-        re.VERBOSE | re.IGNORECASE,
+    		(\s*?(?:\[|\(|\{|)?@\w*\s*\w+(?:\)|\]|\})?	#@mention
+    		|\s?\|?\|?\-?\s*\#?
+    		\[?(?:\w{3}\.)?\w+\.\w{2,3}(?:\.\w{2})?\b\]? 	#website
+    		|\[?\s*\bBB\w{0,3}\s*\-?(CHANNEL)?\s*?\-?\s*\w+\s*\]?	#bbm
+    		|\s+\|s*
+    		|\||\\|\/|\?|\<|\>|\:|\*|)""",
+            re.VERBOSE | re.IGNORECASE,
     )
     string = re.sub(r"\s+", " ", string)
     string = re.sub('"', "'", string)
